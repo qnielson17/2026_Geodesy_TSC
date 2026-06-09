@@ -1,2 +1,6 @@
 .DS_Store
 *.h5
+
+# Python bytecode/cache
+__pycache__/
+*.py[cod]

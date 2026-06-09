@@ -493,9 +493,9 @@ def _coerce_greens(greens: Greens2D | str | Path, *, mat_struct_name: str | None
 def _mode_sign_and_label(inversion_mode: str) -> tuple[float, str]:
     mode = inversion_mode.lower()
     if mode == "forward_slip":
-        return 1.0, "forward slip rate"
+        return -1.0, "forward slip rate"
     if mode == "slip_deficit":
-        return -1.0, "slip-deficit rate"
+        return 1.0, "slip-deficit rate"
     raise ValueError("inversion_mode must be 'forward_slip' or 'slip_deficit'.")
 
 

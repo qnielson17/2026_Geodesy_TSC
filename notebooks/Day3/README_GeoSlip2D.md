@@ -30,35 +30,43 @@ The package is intended for testing how assumptions about elastic structure and 
 
 ## Repository layout
 
-A typical repository layout is:
+The current repository layout is:
 
 ```text
 GeoSlip2D/
 ├── README.md
 ├── pyproject.toml
-├── src/
-│   └── geoslip2d/
-│       ├── __init__.py
-│       ├── geometry.py
-│       ├── greens.py
-│       ├── homogeneous.py
-│       ├── layered.py
-│       ├── wedge.py
-│       ├── vecycle.py
-│       ├── inversion.py
-│       ├── io.py
-│       ├── plotting.py
-│       ├── elastic_wedge/
-│       └── vecycle2d/
-├── examples/
-│   ├── Compliant_wedge_model.ipynb
-│   ├── Layered_model.ipynb
-│   ├── Slip_inversion.ipynb
-│   └── Viscoelastic_cycle.ipynb
-└── tests/
+├── Compliant_wedge_model_demo.ipynb
+├── Layered_model_demo.ipynb
+├── Slip_inversion_demo.ipynb
+├── Slip_inversion_activities.ipynb
+├── Viscoelastic_cycle_demo.ipynb
+├── data/
+│   ├── gnss_interseismic_velocities_NAfixed.txt
+│   ├── synthetic_data.txt
+│   └── synthetic_slowslip_data.txt
+├── geoslip2d/
+│   ├── __init__.py
+│   ├── build.py
+│   ├── data_format_helpers.py
+│   ├── geometry.py
+│   ├── greens.py
+│   ├── homogeneous.py
+│   ├── inversion.py
+│   ├── io.py
+│   ├── layered.py
+│   ├── notebook_helpers.py
+│   ├── plotting.py
+│   ├── py.typed
+│   ├── vecycle.py
+│   ├── wedge.py
+│   ├── elastic_wedge/
+│   └── vecycle2d/
+├── images/
+└── outputs/
 ```
 
-The `examples/` folder contains the main usage notebooks. These notebooks are the recommended entry point for new users.
+The demo and activity notebooks in the repository root are the main entry point for new users.
 
 ---
 
